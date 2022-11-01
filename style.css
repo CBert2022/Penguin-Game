@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #c8dad3;
+}
+
+h1{
+    font-size: 80px;
+}
+
+p{
+}
+
+img{
+    width: 200px;
+}
+
+.btn {
+    border-radius: 12px;
+    background-color: #96b3e4; /* Green */
+    border: black
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
