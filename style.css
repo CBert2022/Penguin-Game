@@ -11,14 +11,12 @@ h1{
     font-size: 80px;
 }
 
-p{
-}
 
 img{
     width: 200px;
 }
 
-.btn {
+/* .btn {
     border-radius: 12px;
     background-color: #96b3e4; /* Green */
     border: black
@@ -28,4 +26,5 @@ img{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-}
+ 
+

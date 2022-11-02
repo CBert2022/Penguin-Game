@@ -7,6 +7,7 @@ function preload() {
 
 function setup() {
 	createCanvas(1000, 600)
+
 	
 }
 
@@ -23,6 +24,9 @@ function keyPressed() {
 	}
 	if (keyCode === 37) {
 		game.player.slideBackward()
+	}
+	if(keyCode === 40){
+		game.player.duck && image(game.playerImageDuck, this.x, this.y, this.width, this.height)
 	}
 }
 

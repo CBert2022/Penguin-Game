@@ -6,6 +6,10 @@ class Game {
         this.playerImage
         this.fishImage
         this.obstacles = []
+        this.iceImage
+        this.icecubes = []
+        this.jumpSound
+        this.playerImageDuck
     
        
     }
@@ -19,7 +23,11 @@ class Game {
         ]
         
         this.playerImage = loadImage("./assets/Penguin.gif")
+        this.playerImageDuck = loadImage("./assets/ps.png")
         this.fishImage = loadImage("./assets/Fish.gif")
+        this.iceImage = loadImage("./assets/icecube.png")
+        this.jumpSound = loadSound("./assets/Sounds/JumoSound.mp3")
+
         
         
 
@@ -30,8 +38,9 @@ class Game {
 		this.background.draw()
 		this.player.draw()
         
-
-        // display score
+    
+    
+       if ()
        
 
 		// Every x frames we want to push a new coin into the array 
@@ -54,14 +63,32 @@ class Game {
 				return true
 			}
 		})
-	}
 
-        gameStateCheck (){
-            if (game.player.score === 10) {
+        // IceCube logic 
+        if (frameCount % 500 === 0) {
+			this.icecubes.push(new Ice(this.iceImage))
+		}
+
+        // Draw the ice
+        this.icecubes.forEach(function (icecube) {
+            icecube.draw()
+        })
+
+           // Filter the coins which are out of the canvas or had a collision
+		// We need an arrow function here, so that "this" has the right context (of the game object)
+		this.icecubes = this.icecubes.filter(icecube => {
+
+			if (icecube.x < 0) {
+				return false
+			} else {
+				return true
+			}
+		})
+
+        if (game.player.score === 20){
+                textSize(80)
+                textAlign(CENTER)
+                text('You mastered level 1!', width/2, height/2-16)
             }
-        }
-    
-    
-       
-
-    }
+	}
+}
