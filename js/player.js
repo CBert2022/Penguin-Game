@@ -16,18 +16,18 @@ class Player {
 		this.velocity += this.gravity // falling
 		this.y += this.velocity
 
-        if (this.jumpCounter === 3) { // funkioniert nut beim ersten mal
-			this.velocity += this.gravity 
-        }
+        // if (this.jumpCounter >= 3) { // funkioniert nut beim ersten mal
+		// 	this.gravity = 1
+        // } else {this.gravity = 0.3}
 
 		// If y is lower than the top left corner of Player we need to set its value to the starting value
-		if (this.y >= 550 - this.height) {
-			this.y = 550 - this.height
+		if (this.y >= 500 - this.height) {
+			this.y = 500 - this.height
 		}
 
         // If x is highter than 1000 set the value to the starting point
-        if (this.x >= 1000 - this.width) {
-			this.x = 1000 - this.width
+        if (this.x >= 900 - this.width) {
+			this.x = 900 - this.width
 		}
         if (this.x <= 0 + this.width) {
             this.x = 0 + this.width 
@@ -41,28 +41,33 @@ class Player {
 
        
         image(game.playerImage, this.x, this.y, this.width, this.height)
+        
 
-        // if (keyIsDown(65)) {
-		// 	this.moveLeft()
-		// }
-
-        // if (keyIsDown(68)) {
-        //     this.moveRight()
-        // }
+       
     } 
 
 	jump() {
-		this.velocity = - 10
-        this.jumpCounter++
+        console.log(this.y)
+        if (this.y >= 120){
+            this.velocity = - 10
+            game.playerImage = game.playerImagedefault
+            jumpsound.play()
+        }
+		
+
+        
 	}
     slideForward (){
         this.x += 100
+        game.playerImage = game.playerImagedefault
     }
     slideBackward (){
         this.x -= 100
+        game.playerImage = game.playerImagedefault
     }
     duck(){
-        this.y -= 100
+        this.y += 100
+        game.playerImage = game.playerImageDuck
     }
 
 }

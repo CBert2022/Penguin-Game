@@ -1,30 +1,37 @@
+
+
 body {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Space Mono', monospace;
     background-color: #c8dad3;
 }
 
 h1{
     font-size: 80px;
+    font-weight: bold;
 }
 
 
 img{
     width: 200px;
+    padding: 100px;
+}
+ 
+.btn{
+    background-color: beige;
 }
 
-/* .btn {
-    border-radius: 12px;
-    background-color: #96b3e4; /* Green */
-    border: black
-    color: white;
-    padding: 15px 32px;
+p {
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
- 
+    font-size: 20px;
+    margin: 20px;
+}
+div{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
 
+}

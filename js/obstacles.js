@@ -4,12 +4,13 @@ class Obstacle {
 		this.width = 50
 		this.height = 50
         this.x = width
-		this.y = (Math.random() * height)
-        this.speed = Math.floor(Math.random()*(3))
+		this.y = (Math.random() * height/2)
+        this.randomVelocity = (Math.random()*4) + 1
+        this.catchsound2 = new Audio("../assets/Sounds/CatchSound.mp3")
     }
     draw(){
-       this.x--
-       image(this.image, this.x, this.y, this.width, this.height, this.speed)
+       this.x = this.x-= this.randomVelocity
+       image(this.image, this.x, this.y, this.width, this.height)
 
        if (this.y >= 600 - this.height) {
         this.y = 600 - this.height  
@@ -30,13 +31,14 @@ class Obstacle {
 		let playerY = playerInfo.y + playerInfo.height / 2
 		
         // dist(x1, y1, x2, y2) returns the distance between the objects
-		if (dist(obstacleX, obstacleY, playerX, playerY) > 25) {
+		if (dist(obstacleX, obstacleY, playerX, playerY) > 90) {
 			return false
 		} else {
-			// Increment the score
+			// Increment the scor
+            this.catchsound2.play()
 			game.player.score++
-            document.querySelector("div span").innerText = game.player.score
             console.log(game.player.score)
+            document.querySelector("div span").innerText = game.player.score
 			return true
 		} 
     
