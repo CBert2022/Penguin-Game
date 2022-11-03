@@ -37,6 +37,7 @@ class Game {
 		this.player.draw()
 
         //  // Hide the manual div
+        // 
          if (keyCode === (13)){
             document.getElementById("manuals").style.display="none"
             }
