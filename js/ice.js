@@ -6,7 +6,7 @@ class Ice {
     this.x = width
     this.y = (Math.random() * height)
     this.randomVelocity = Math.max(Math.random()*4)
-    this.touchSound = new Audio ("../assets/Sounds/touchIce.mp3")
+    this.touchSound = new Audio ("assets/Sounds/touchIce.mp3")
     }
 
     draw(){

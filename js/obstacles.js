@@ -6,7 +6,7 @@ class Obstacle {
         this.x = width
 		this.y = (Math.random() * height/2)
         this.randomVelocity = (Math.random()*4) + 1
-        this.catchsound2 = new Audio("../assets/Sounds/CatchSound.mp3")
+        this.catchsound2 = new Audio("assets/Sounds/CatchSound.mp3")
     }
     draw(){
        this.x = this.x-= this.randomVelocity
