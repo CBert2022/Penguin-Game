@@ -18,19 +18,19 @@ class Game {
     }
     preload () {
         this.backgroundImages = [
-            { src: loadImage("assets/background1.png"), x: 0, speed: 0 },
-            { src: loadImage("assets/background2.png"), x: 0, speed: 1 },
-            { src: loadImage("assets/cloudw1000.png"), x: 0, speed: 2 },
-            { src: loadImage("assets/Sea_1.png"), x:0 , speed: 3},
-            { src: loadImage("assets/ice2.png"), x: 0, speed: 0 },
+            { src: loadImage("/assets/background1.png"), x: 0, speed: 0 },
+            { src: loadImage("/assetsassets/background2.png"), x: 0, speed: 1 },
+            { src: loadImage("/assets/cloudw1000.png"), x: 0, speed: 2 },
+            { src: loadImage("/assets/Sea_1.png"), x:0 , speed: 3},
+            { src: loadImage("/assets/ice2.png"), x: 0, speed: 0 },
         ]
-        this.playerImagedefault = loadImage("assets/Penguin.gif")
-        this.playerImage = loadImage("assets/Penguin.gif")
-        this.playerImageDuck = loadImage("assets/ps.png")
-        this.playerImageFreeze = loadImage("assets/freezing_penguin.gif")
-        this.fishImage = loadImage("assets/FishFaceUp.gif")
-        this.iceImage = loadImage("assets/icecube.png")
-        this.snowFlakeImage = loadImage("assets/snowflake10.png")
+        this.playerImagedefault = loadImage("/assets/Penguin.gif")
+        this.playerImage = loadImage("/assets/Penguin.gif")
+        this.playerImageDuck = loadImage("/assets/ps.png")
+        this.playerImageFreeze = loadImage("/assets/freezing_penguin.gif")
+        this.fishImage = loadImage("/assets/FishFaceUp.gif")
+        this.iceImage = loadImage("/assets/icecube.png")
+        this.snowFlakeImage = loadImage("/assets/snowflake10.png")
 
 
         

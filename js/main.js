@@ -4,7 +4,7 @@ let jumpSound
 // Load game assets
 function preload() {
 	game.preload()
-	jumpSound = loadSound("assets/Sounds/jumpSound.mp3")
+	jumpSound = loadSound("/assets/Sounds/jumpSound.mp3")
 	
 }
 
