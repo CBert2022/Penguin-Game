@@ -4,7 +4,7 @@ let jumpSound
 // Load game assets
 function preload() {
 	game.preload()
-	jumpSound = loadSound("/assets/Sounds/jumpSound.mp3")
+	jumpSound = loadSound("https://github.com/CBert2022/Penguin-Game/blob/main/assets/Sounds/JumpSound2.mp3")
 	
 }
 
