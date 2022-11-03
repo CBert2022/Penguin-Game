@@ -13,14 +13,22 @@
         <title>Hungry Penguin</title>
         </head>
 <body>
+    <audio src="../assets/Sounds/DeathSound.mp3" id="deathsound"></audio>
     <script>
         document.addEventListener("keyup", event => {
-        window.open ("./game.html", "_self")  } )
+            if(event.key=="Enter"){
+                
+                window.open ("./game.html", "_self")   
+            }
+        })
+      </script>
+       <script>
+        document.getElementById('deathsound').play();
       </script>
         <audio src="./assets/Sounds/DeathSound.mp3" id="deathsound"></audio>
     <h1>You lose!</h1>
     <p>Peety is still hungry and ordered Pizza!</p>
-    <p class="btn" >Press any key to play again!</p>
+    <p class="btn" >Press ENTER to play again! </p>
     <iframe src="https://giphy.com/embed/xsBP0RdvxJfhu" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/pizza-time-xsBP0RdvxJfhu">via GIPHY</a></p>
    
 </body>

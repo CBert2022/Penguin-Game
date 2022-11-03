@@ -10,7 +10,7 @@ body {
 }
 
 h1{
-    font-size: 80px;
+    font-size: 50px;
     font-weight: bold;
 }
 
@@ -30,8 +30,32 @@ p {
     margin: 20px;
 }
 div{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     margin-bottom: 20px;
 
 }
+#manuals {
+background-color: aliceblue;
+opacity: 90%;
+border-radius: 12px;
+border: 5px solid black;
+position: absolute;
+top:470px;
+display: block;
+}
+
+canvas {
+    border-radius: 12px;
+    border: 5px solid black;
+}
+/* #timer{
+    position: absolute;
+    top: 160px;
+    right: 145px
+}
+#score{
+    position: absolute;
+    top: 222px;
+    right: 70px;
+} */
