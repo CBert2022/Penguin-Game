@@ -44,7 +44,7 @@ class Game {
 		this.player.draw()
         
        
-
+        //
 		// Every x frames we want to push a new coin into the array 
 		if (frameCount % 200 === 0) {
 			this.obstacles.push(new Obstacle(this.fishImage))
