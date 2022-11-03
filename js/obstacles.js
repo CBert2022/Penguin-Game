@@ -1,8 +1,8 @@
 class Obstacle {
     constructor(image) {
         this.image = image
-		this.width = 50
-		this.height = 50
+		this.width = 40
+		this.height = 60
         this.x = width
 		this.y = (Math.random() * height/2)
         this.randomVelocity = (Math.random()*4) + 1
@@ -21,7 +21,6 @@ class Obstacle {
     }
     collision(playerInfo) {
 
-
 		// Get the middle of the obstacle
 		let obstacleX = this.x + this.width / 2
 		let obstacleY = this.y + this.height / 2
@@ -34,14 +33,14 @@ class Obstacle {
 		if (dist(obstacleX, obstacleY, playerX, playerY) > 90) {
 			return false
 		} else {
-			// Increment the scor
+            //play sound
             this.catchsound2.play()
+			// Increment the score
 			game.player.score++
-            console.log(game.player.score)
+             // target and change the div that hold the score an update it
             document.querySelector("div span").innerText = game.player.score
+            // document.getElementById("catchsound").play
 			return true
 		} 
-    
-	}
-   
-}
+	} // close collision fct
+} // close class obstacles

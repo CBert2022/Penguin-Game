@@ -13,11 +13,17 @@
 <body>
     <script>
         document.addEventListener("keyup", event => {
-        window.open ("./game.html", "_self")  } )
+            if(event.key=="Enter"){
+                
+                window.open ("./game.html", "_self")   
+            }
+        })
       </script>
+      
     <h1>Peet the brave Penguin</h1>
     <p>
-        Peety is a penguin from South Africa is trying to catch  <br>
+        Peety was visiting his cousin in Antarctica.<br> 
+        He is from South Africa and he is trying to catch  <br>
         some fish and become strong enough to swim home.<br>
         He is used to warm weather and doesn't like the cold or ice.<br>
         So watch out - cause he loses fish when he gets cold!
@@ -25,7 +31,7 @@
         Catch 20 fish to feed Peety. He loves a full belly.<br>
         Yummy!
     </p>
-    <p class="btn" >Press any key to play again! </p>
+    <p class="btn" >Press ENTER to play! </p>
         <img src="assets/Penguin.gif" alt="Penguin">
 </body>
 </html>

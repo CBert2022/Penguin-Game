@@ -14,13 +14,15 @@
         </head>
     <body>
         <audio src="assets/Sounds/BackgroundMusic.mp3" id="backgroundmusic"></audio>
-        <audio src="assets/Sounds/CatchSound.mp3" id=catchsound""></audio>
+        <audio src="assets/Sounds/CatchSound.mp3" id="catchsound"></audio>
         <audio src="assets/Sounds/JumpSound.mp3" id="jumpsound"></audio>
         <audio src="assets/Sounds/WinSound.mp3" id="winsound"></audio>
         <audio src="assets/Sounds/DeathSound.mp3" id="deathsound"></audio>
+        <audio src="assets/Sounds/JumpSound2.mp3" id="jumpsound"></audio>
         <h1>Peety the brave Penguin</h1>
        
-        <div>Score = <span>0</span></div>
+        <div id="score">Score = <span>0</span></div>
+        <div><span id="timer"> </span></div>
         <script src="./js/snowflakes.js"></script>
         <script src="./js/ice.js"></script>
         <script src="./js/obstacles.js"></script>
@@ -28,7 +30,9 @@
         <script src="./js/player.js"></script>
         <script src="./js/game.js"></script>
         <script src="./js/main.js"></script>
-         <p>Catch some fish and avoid the ice. <br>Use the arrow keys to move left, right & down. Use space to jump.</p>
-        
+        <div id="manuals">
+            <p>Catch some fish and avoid the ice. <br>Use the arrow keys to move left, right & down.<br> Use space to jump.</p>
+            <p class="btn" >Press ENTER to play! </p>
+        </div>
     </body>
 </html>

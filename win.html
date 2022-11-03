@@ -13,9 +13,16 @@
         <title>Hungry Penguin</title>
         </head>
 <body>
+    <audio src="../assets/Sounds/WinSound.mp3" id="winsound"></audio>
     <script>
         document.addEventListener("keyup", event => {
-        window.open ("./game.html", "_self")  } )
+            if(event.key=="Enter"){
+                window.open ("./game.html", "_self")   
+            }
+        })
+      </script>
+       <script>
+        document.getElementById('winsound').play();
       </script>
          <audio src="assets/Sounds/WinSound.mp3" id="winsound"></audio>
     <h1>You win!</h1>
@@ -23,7 +30,7 @@
     He had a good meal and enough strength to swim back <br>
     to South Africa - where it's nice and warm. <br>
     Now he needs to rest. </p>
-    <p class="btn" >Press any key to play again! </p>
+    <p class="btn" >Press ENTER to play again! </p>
     <iframe src="https://giphy.com/embed/9bonqDGbozFTkr3DyX" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/pudgypenguins-cute-penguin-pudgy-9bonqDGbozFTkr3DyX">via GIPHY</a>
    
 </body>

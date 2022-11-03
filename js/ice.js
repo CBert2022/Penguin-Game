@@ -23,7 +23,6 @@ class Ice {
 
      collision2(playerInfo2) {
 
-
 		// Get the middle of the obstacle
 		let icecubeX = this.x + this.width / 2
 		let icecubeY = this.y + this.height / 2
@@ -33,17 +32,17 @@ class Ice {
 		let player2Y = playerInfo2.y + playerInfo2.height / 2
 
         // dist(x1, y1, x2, y2) returns the distance between the objects
-		if (dist(icecubeX, icecubeY, player2X, player2Y) > 130) {
+		if (dist(icecubeX, icecubeY, player2X, player2Y) > 100) {
 			return false
 		} else {
-			// decrement the score
+             // play sound
             this.touchSound.play()
-			game.player.score -= 5;
+            // decrement the score
+			game.player.score -= 3;
+            // target and change the div that hold the score an update it
             document.querySelector("div span").innerText = game.player.score
             game.playerImage = game.playerImageFreeze
 			return true
 		} 
-    
-	}
-
+	} // close collision2 fct
 } // close class Ice 
