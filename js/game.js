@@ -28,7 +28,7 @@ class Game {
         this.playerImageFreeze = loadImage("assets/freezing_penguin.gif")
         this.fishImage = loadImage("assets/FishFaceUp.gif")
         this.iceImage = loadImage("assets/icecube.png")
-        this.snowFlakeImage = loadImage("../assets/snowflake10.png")
+        this.snowFlakeImage = loadImage("assets/snowflake10.png")
 	}
 
     draw() {
