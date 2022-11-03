@@ -32,10 +32,6 @@ class Game {
         this.iceImage = loadImage("assets/icecube.png")
         this.snowFlakeImage = loadImage("assets/snowflake10.png")
 
-
-        
-        
-
 	}
 
     draw() {
@@ -43,8 +39,6 @@ class Game {
 		this.background.draw()
 		this.player.draw()
         
-       
-        //
 		// Every x frames we want to push a new coin into the array 
 		if (frameCount % 200 === 0) {
 			this.obstacles.push(new Obstacle(this.fishImage))
